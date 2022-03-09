@@ -5,8 +5,7 @@ namespace studentmanagementsystem.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
-        [Required]
-        [Display(Name = "Email")]
+        
         public string Email { get; set; }
     }
 
@@ -18,6 +17,15 @@ namespace studentmanagementsystem.Models
     public class SendCodeViewModel
     {
         public string SelectedProvider { get; set; }
+
+
+
+
+
+
+
+
+
         public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
         public string ReturnUrl { get; set; }
         public bool RememberMe { get; set; }
@@ -25,6 +33,10 @@ namespace studentmanagementsystem.Models
 
     public class VerifyCodeViewModel
     {
+
+
+
+
         [Required]
         public string Provider { get; set; }
 
@@ -106,7 +118,7 @@ namespace studentmanagementsystem.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+       
         public string Email { get; set; }
     }
 }

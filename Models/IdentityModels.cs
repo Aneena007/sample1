@@ -18,6 +18,8 @@ namespace studentmanagementsystem.Models
         }
     }
 
+
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
